@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="editUser.js" type="module"></script>
+    <title>Editar usuario</title>
+</head>
+<body id="editUserBody">
+    <form id="userEditForm">
+        <p>
+            <label for="edit_name">Nombre: </label>
+            <input type="text" name="name" id="edit_name">
+        </p>
+        <p>
+            <label for="edit_first_surname">Primer apellido: </label>
+            <input type="text" name="surname" id="edit_first_surname">
+        </p>
+        <p>
+            <label for="edit_email">Email: </label>
+            <input type="email" name="email" id="edit_email">
+        </p>
+        <p>
+            <label for="edit_user_name">Nombre de usuario: </label>
+            <input type="text" name="username" id="edit_user_name">
+        </p>
+        <p>
+            <input type="submit" value="Editar">
+        </p>
+    </form>
+</body>
+</html>
