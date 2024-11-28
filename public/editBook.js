@@ -10,7 +10,7 @@ async function editBook(event) {
     const id = document.getElementById('edit_id').value;
     const title = document.getElementById('edit_title').value;
     const author = document.getElementById('edit_author').value;
-    const genre_id = document.getElementById('edit_genre_id').value;
+    //const genre_id = document.getElementById('edit_genre_id').value;
     const published_date = document.getElementById('edit_published_date').value;
     const summary = document.getElementById('edit_summary').value;
 
@@ -19,7 +19,7 @@ async function editBook(event) {
         .update({
             title: title,
             author: author,
-            genre_id: genre_id,
+            //genre_id: genre_id,
             published_date: published_date,
             summary: summary
         })

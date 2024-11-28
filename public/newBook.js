@@ -9,13 +9,13 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault()
     const title = form.title.value
     const author = form.author.value
-    const genre_id = form.genre_id.value
+    //const genre_id = form.genre_name.value
     const published_date = form.published_date.value
     const summary = form.summary.value
 
     const { error } = await supabase
         .from('book')
-        .insert({ title, author, genre_id, published_date, summary })
+        .insert({ title, author, published_date, summary })
     if (error) {
         console.log(error)
     } else {
