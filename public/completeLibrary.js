@@ -13,7 +13,7 @@ async function getLibrary(userId) {
 
 }
 document.addEventListener('DOMContentLoaded', async () => {
-    const userId = 1; // Cambia este valor por el ID del usuario que deseas consultar
+    const userId = 3; // Cambia este valor por el ID del usuario que deseas consultar
     const books = await getLibrary(userId);
 
     // Muestra los datos en la consola o en el DOM
