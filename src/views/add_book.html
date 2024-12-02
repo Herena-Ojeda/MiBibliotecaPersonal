@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/assets/css/style.css">
+  <title>Agregar Libro</title>
+</head>
+<body>
+  <header>
+    <h1>Agregar Libro</h1>
+  </header>
+
+  <main>
+    <form id="add-book-form">
+        <label for="book-title">Título del libro:</label>
+        <input type="text" id="book-title" required><br>
+      
+        <label for="book-author">Autor:</label>
+        <input type="text" id="book-author" required><br>
+      
+        <label for="book-genre">Género:</label>
+        <select id="book-genre" required>
+          
+        </select><br>
+      
+        <label for="book-published-date">Fecha de publicación:</label>
+        <input type="date" id="book-published-date" required><br>
+      
+        <label for="book-summary">Resumen:</label>
+        <textarea id="book-summary" required></textarea><br>
+      
+        <button type="submit">Agregar Libro</button>
+    </form>
+      
+    <button id="go-to-dashboard" onclick="window.location.href='dashboard.html'">Ir al Dashboard</button>
+  </main>
+
+  <script type="module" src="../assets/js/add_book.js"></script> 
+</body>
+</html>

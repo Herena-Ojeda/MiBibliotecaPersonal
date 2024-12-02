@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/assets/css/style.css">
+  <title>Mi Biblioteca</title>
+</head>
+<body>
+  <h1>Mis Libros</h1>
+  <table id="book-table">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Género</th>
+        <th>Fecha de publicación</th>
+        <th>Estado</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+      <tr>
+        <td colspan="6">Cargando tus libros...</td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="go-to-dashboard" onclick="window.location.href='dashboard.html'">Ir al Dashboard</button>
+  <script type="module" src="../assets/js/my_library.js"></script>
+</body>
+</html>
