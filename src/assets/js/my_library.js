@@ -41,7 +41,7 @@ async function loadUserBooks() {
           <td>${genreName}</td>
           <td>${book.published_date}</td>
           <td>${status ? 'Leído' : 'No leído'}</td>
-          <td><button class="toggle-status-btn" data-book-id="${book_id}" data-status="${status}">Cambiar estado</button></td>
+          <td><button class="btn-edit toggle-status-btn" data-book-id="${book_id}" data-status="${status}">Cambiar estado</i></button></td>
         `
         bookList.appendChild(row)
       })
@@ -105,7 +105,6 @@ async function toggleBookStatus(bookId, currentStatus) {
   }
 }
 
-
 document.addEventListener('click', (event) => {
   if (event.target && event.target.classList.contains('toggle-status-btn')) {
     const bookId = event.target.getAttribute('data-book-id')
@@ -113,5 +112,6 @@ document.addEventListener('click', (event) => {
     toggleBookStatus(bookId, currentStatus)
 }})
 
-
 document.addEventListener('DOMContentLoaded', loadUserBooks)
+
+

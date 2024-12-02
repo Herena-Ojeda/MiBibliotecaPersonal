@@ -26,7 +26,6 @@ window.onload = () => {
 
       
       document.getElementById('user-name').textContent = data.name
-      document.getElementById('user-email').textContent = data.email
 
       
     

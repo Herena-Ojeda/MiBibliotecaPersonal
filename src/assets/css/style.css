@@ -25,7 +25,7 @@ body {
 
 /* Crear una clase específica para páginas con fondo */
 body.with-background {
-    background-image: url('../images/background_01.jpeg');
+    background-image: url('../img/background_01.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -103,10 +103,9 @@ nav.scrolled {
 
 /* Logo centrado */
 .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Estilos para el logo */
 .logo-img {
@@ -181,10 +180,16 @@ nav ul li a:hover i {
     padding: 0 1rem;
 }
 
-h2 {
+h1 {
     font-family: var(--font-titles);
     font-weight: 600;
     color: var(--color-white);
+}
+
+h2 {
+    font-family: var(--font-titles);
+    font-weight: 600;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
     text-align: left;
     font-size: 35px;
@@ -236,6 +241,7 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -486,6 +492,7 @@ a:hover {
 }
 
 .form-group input,
+.form-group select,
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
@@ -576,12 +583,12 @@ nav ul li a.active i {
 
 /* Estilos para la tabla de biblioteca */
 .biblioteca-tabla {
-    width: 100%;
+    width: 80%;
     background: var(--color-white);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
+    margin: 0 auto;
 }
 
 .biblioteca-tabla table {
@@ -628,7 +635,7 @@ nav ul li a.active i {
 }
 
 .btn-edit {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: var(--color-white);
 }
 

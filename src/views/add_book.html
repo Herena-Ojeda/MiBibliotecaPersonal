@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Agregar Libro</title>
 </head>
 <body>
   <header>
-    <h1>Agregar Libro</h1>
+    <h1 class="form-title">Agregar Libro</h1>
   </header>
 
-  <main>
-    <form id="add-book-form">
+  <main class="form-container">
+    <form class="form-group" id="add-book-form">
         <label for="book-title">Título del libro:</label>
         <input type="text" id="book-title" required><br>
       
@@ -30,12 +32,40 @@
         <label for="book-summary">Resumen:</label>
         <textarea id="book-summary" required></textarea><br>
       
-        <button type="submit">Agregar Libro</button>
+        <button class="btn" type="submit">Agregar Libro</button>
     </form>
       
-    <button id="go-to-dashboard" onclick="window.location.href='dashboard.html'">Ir al Dashboard</button>
+    <button class="btn-edit" id="go-to-dashboard" onclick="window.location.href='dashboard.html'">Ir al Dashboard</button>
   </main>
+  <footer class="footer"></footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Mi Biblioteca Personal</h4>
+            <p class="footer-description">Tu espacio personal para organizar y disfrutar de tus lecturas favoritas.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="dashboard.html">Inicio</a></li>
+                <li><a href="my_library.html">Mi Biblioteca</a></li>
+                <li><a href="add_book.html">Añadir Libro</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mi Biblioteca Personal. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
-  <script type="module" src="../assets/js/add_book.js"></script> 
+
 </body>
+<script type="module" src="../assets/js/add_book.js"></script> 
 </html>
