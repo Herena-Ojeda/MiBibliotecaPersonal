@@ -13,7 +13,7 @@
         <div class="nav-container">
             <div class="nav-left">
                 <ul>
-                    <li><a href="dashboard.html" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                     <li><a href="my_library.html"><i class="fa-solid fa-book"></i>Mi biblioteca</a></li>
                 </ul>
             </div>
@@ -26,18 +26,17 @@
   
             <div class="nav-right">
                 <ul>
-                    <li><a href="add_book.html"><i class="fa-solid fa-plus"></i> Añadir libro</a></li>
+                    <li><a href="add_book.html"class="active"><i class="fa-solid fa-plus"></i> Añadir libro</a></li>
                     <li><a href="edit_user.html"><i class="fa-solid fa-gear"></i> Editar perfil</a></li>
-                    <button class="btn" id="logout-button">Cerrar sesión</button>
+                    <li><button class="btn-new" id="logout-button">Cerrar sesión</button></li>
                 </ul>
             </div>
         </div>
     </nav>
   <header>
-    <h1 class="form-title">AÑADIR LIBRO</h1>
   </header>
-
   <main class="form-container">
+    <h1 class="form-title">AÑADIR LIBRO</h1>
     <form class="form-group" id="add-book-form">
         <label for="book-title">Título del libro:</label>
         <input type="text" id="book-title" required><br>
@@ -61,7 +60,7 @@
       
     <button class="btn-edit" id="go-to-dashboard" onclick="window.location.href='dashboard.html'">Ir a inicio</button>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
     <div class="footer-content">
         <div class="footer-section">
             <h4>Mi Biblioteca Personal</h4>

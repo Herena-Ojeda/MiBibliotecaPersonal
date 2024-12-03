@@ -248,6 +248,21 @@ h2 {
     background-color: #e06c2d;
     transform: translateY(-2px);
 }
+.btn-new {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-new:hover {
+    background-color: #e06c2d;
+    transform: translateY(-2px);
+}
 
 /* Botones secundarios */
 .btn-secondary {
@@ -589,6 +604,7 @@ nav ul li a.active i {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    padding:20px;
 }
 
 .biblioteca-tabla table {
